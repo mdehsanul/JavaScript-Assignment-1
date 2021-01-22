@@ -20,12 +20,12 @@ function budgetCalculator(numOfWatch, numOfPhone, numOfLaptop){
     // any number of item(watch, phone, laptop) can equal to zero or more than zero
     if ((numOfWatch >= 0) && (numOfPhone >= 0) && (numOfLaptop >= 0)){
         // 1 watch price = 50 taka
-        watchPrice = numOfWatch * 50;
+        var watchPrice = numOfWatch * 50;
         // 1 phone price = 100 taka
-        phonePrice = numOfPhone * 100;
+        var phonePrice = numOfPhone * 100;
         // 1 laptop price = 500 taka
-        laptopPrice = numOfLaptop * 500;
-        totalBudget = watchPrice + phonePrice + laptopPrice;
+        var laptopPrice = numOfLaptop * 500;
+        var totalBudget = watchPrice + phonePrice + laptopPrice;
         return totalBudget;
     }
     // error handle meaaage: when any number of item less than zero
