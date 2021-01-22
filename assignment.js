@@ -73,31 +73,33 @@ function hotelCost(day){
 
 
 
-
 // megaFriend
 function megaFriend(friendNameArray){
-    // when array length not equal to zero
-    if(friendNameArray.length != 0){
-        // taking first array index value as highest length name.
-        var highestLengthName = friendNameArray[0];
-        // running a for loop equal to the length of the array
-        for (var i = 0; i < friendNameArray.length; i++){
-            var friendName = friendNameArray[i];
-            // comparison between highest length name with every name of the array
-            if( friendName.length > highestLengthName.length){
-                // changing highestLengthName if any new highest length name in the array
-                highestLengthName = friendName;
+    // friendNameArray is a array or not
+    if (Array.isArray(friendNameArray)){
+        // when array length not equal to zero
+        if(friendNameArray.length != 0){
+            // taking first array index value as highest length name.
+            var highestLengthName = friendNameArray[0];
+            // running a for loop equal to the length of the array
+            for (var i = 0; i < friendNameArray.length; i++){
+                var friendName = friendNameArray[i];
+                // comparison between highest length name with every name of the array
+                if( friendName.length > highestLengthName.length){
+                    // changing highestLengthName if any new highest length name in the array
+                    highestLengthName = friendName;
+                }
             }
+            return highestLengthName;
         }
-        return highestLengthName;
+        // error handle meaaage: when  Array is empty. array length equal to zero
+        else{
+            return "Provided Array is empty. please insert value in the array";
+        }
     }
-    // error handle meaaage: when  Array is empty. array length equal to zero
+    //  error handle meaaage: when an array is not pass as a parameter for the function
     else{
-        return "Provided Array is empty. please insert value in the array";
+        return "No Array Found. pass an Array as parameter for the function";
     }
 }
-
-
-
-
 
