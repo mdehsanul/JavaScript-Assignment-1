@@ -41,7 +41,7 @@ function budgetCalculator(numOfWatch, numOfPhone, numOfLaptop){
 function hotelCost(day){
     var rent;
     // day number can equal to one or more than one
-    if (day >= 1) {
+    if (day >= 1){
         // when day number is one to ten. rent value 100.
         if (day <= 10){
             rent = day * 100;
