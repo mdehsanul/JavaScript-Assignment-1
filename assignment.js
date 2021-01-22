@@ -30,9 +30,9 @@ function budgetCalculator(numOfWatch, numOfPhone, numOfLaptop){
         var totalBudget = watchPrice + phonePrice + laptopPrice;
         return totalBudget;
     }
-    // error handle meaaage: when any number of item less than zero
+    // error handle message: when any number of the item less than zero
     else{
-        return "Number of item can not be negative";
+        return "Number of the item can not be negative";
     }
 }
 
@@ -65,7 +65,7 @@ function hotelCost(day){
         }
         return rent;
     }
-    // error handle meaaage: when day number less than one
+    // error handle message: when day number less than one
     else{
         return "Number of days can not be zero or negative indicator value";
     }
@@ -97,9 +97,9 @@ function megaFriend(friendNameArray){
             return "Provided Array is empty. please insert value in the array";
         }
     }
-    //  error handle meaaage: when an array is not pass as a parameter for the function
+    //  error handle message: when an array is not passed as a parameter for the function
     else{
-        return "No Array Found. pass an Array as parameter for the function";
+        return "No Array Found. pass an Array as the parameter for the function";
     }
 }
 
